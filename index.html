@@ -193,34 +193,156 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>TechLearn Pro</h5>
-                    <p>Empowering developers worldwide with quality education.</p>
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How do I get started with the courses?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Getting started is easy! Simply create an account, choose your interests, and start exploring our courses. Our platform will guide you through the learning path that best suits your goals.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Are the certificates recognized by employers?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! Our certificates are industry-recognized and valued by employers worldwide. They demonstrate your practical skills and theoretical knowledge in your chosen field.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What kind of support do you offer to students?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We provide comprehensive support including 24/7 technical assistance, mentor guidance, active community forums, and regular live Q&A sessions with instructors.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">About Us</a></li>
-                        <li><a href="#" class="text-light">Contact</a></li>
-                        <li><a href="#" class="text-light">Privacy Policy</a></li>
-                        <li><a href="#" class="text-light">Terms of Service</a></li>
-                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Find Us</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info p-4 bg-light rounded">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Location</h5>
+                                <p class="mb-0">Itahari, Nepal</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone fa-2x text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Phone</h5>
+                                <p class="mb-0"><a href="tel:9764462846" class="text-dark text-decoration-none">+977 976-446-2846</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Email</h5>
+                                <p class="mb-0"><a href="mailto:kc5870257@gmail.com" class="text-dark text-decoration-none">kc5870257@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Connect With Us</h5>
-                    <div class="social-links">
+                <div class="col-lg-6">
+                    <div class="map-container rounded overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28514.481461765776!2d87.2593599!3d26.6634265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6c66e80fbfa9%3A0x38094d1a7c974283!2sItahari%2C%20Nepal!5e0!3m2!1sen!2s!4v1647777777777!5m2!1sen!2s"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-4">About TechLearn Pro</h5>
+                    <p class="mb-4">Empowering developers worldwide with quality education. Located in Itahari, Nepal, we're committed to making technology education accessible to everyone.</p>
+                    <div class="social-links mb-4">
                         <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                                <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">Courses</a></li>
+                                <li class="mb-2"><a href="#features" class="text-light text-decoration-none">Features</a></li>
+                                <li class="mb-2"><a href="#testimonials" class="text-light text-decoration-none">Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#faq" class="text-light text-decoration-none">FAQ</a></li>
+                                <li class="mb-2"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                                <li class="mb-2"><a href="#" class="text-light text-decoration-none">Terms of Service</a></li>
+                                <li class="mb-2"><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i> Itahari, Nepal
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i> 
+                            <a href="tel:9764462846" class="text-light text-decoration-none">+977 976-446-2846</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:kc5870257@gmail.com" class="text-light text-decoration-none">kc5870257@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="text-center mt-4">
+            <hr class="my-4 bg-light">
+            <div class="text-center">
                 <p class="mb-0">&copy; 2024 TechLearn Pro. All rights reserved.</p>
             </div>
         </div>

@@ -143,36 +143,143 @@ body {
     color: #4b5563;
 }
 
-/* Footer */
+/* FAQ Section */
+.accordion-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 1.25rem;
+    background-color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+    padding: 1.25rem;
+    background-color: #fff;
+}
+
+/* Contact Section */
+.contact-info {
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.contact-info .fas {
+    width: 40px;
+}
+
+.map-container {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Footer */
 footer {
     background-color: #111827;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
 footer h5 {
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
-footer ul li {
-    margin-bottom: 0.5rem;
+footer p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
 }
 
-footer a {
-    text-decoration: none;
+footer .social-links {
+    margin-top: 1.5rem;
+}
+
+footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
     transition: var(--transition);
 }
 
-footer a:hover {
+footer .social-links a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+footer ul li a {
+    transition: var(--transition);
+    padding: 0.3rem 0;
+    display: inline-block;
+}
+
+footer ul li a:hover {
     color: var(--primary-color) !important;
+    transform: translateX(5px);
 }
 
-.social-links a {
-    font-size: 1.5rem;
+footer hr {
+    opacity: 0.1;
+}
+
+/* Responsive Design Updates */
+@media (max-width: 768px) {
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+
+    footer .col-lg-4 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Animation for FAQ */
+.accordion-button:not(.collapsed) i {
+    transform: rotate(180deg);
+}
+
+.accordion-button i {
+    transition: transform 0.3s ease;
+}
+
+/* Contact Links Hover Effect */
+.contact-info a {
     transition: var(--transition);
 }
 
-.social-links a:hover {
-    transform: translateY(-2px);
+.contact-info a:hover {
+    color: var(--primary-color) !important;
 }
 
 /* Responsive Design */
