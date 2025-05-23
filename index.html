@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn Pro - Your Learning Journey Starts Here</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TechLearn Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome to TechLearn Pro</h5>
+                </div>
+                <div class="modal-body">
+                    <form id="userForm">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Enter Your Name</label>
+                            <input type="text" class="form-control" id="userName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Select Your Interest Areas</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="web-development" id="webDev">
+                                <label class="form-check-label" for="webDev">Web Development</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="data-science" id="dataScience">
+                                <label class="form-check-label" for="dataScience">Data Science</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="mobile-dev" id="mobileDev">
+                                <label class="form-check-label" for="mobileDev">Mobile Development</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="ai-ml" id="aiMl">
+                                <label class="form-check-label" for="aiMl">AI & Machine Learning</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Start Learning</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Transform Your Career with Expert-Led Tech Courses</h1>
+                    <p class="lead">Join thousands of successful developers who have mastered their skills through our comprehensive learning platform.</p>
+                    <button class="btn btn-primary btn-lg">Explore Courses</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Learning illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Learning Paths</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Web Development</h3>
+                            <p class="card-text">Master modern web development with HTML, CSS, JavaScript, React, and more.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">AI & Machine Learning</h3>
+                            <p class="card-text">Dive into artificial intelligence, machine learning, and deep learning.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Mobile Development</h3>
+                            <p class="card-text">Create amazing mobile apps with React Native and Flutter.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose TechLearn Pro?</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-video fa-3x text-primary mb-3"></i>
+                        <h4>HD Video Courses</h4>
+                        <p>Crystal clear video lessons with expert instructors</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-project-diagram fa-3x text-primary mb-3"></i>
+                        <h4>Real Projects</h4>
+                        <p>Build portfolio-worthy projects</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                        <h4>Certificates</h4>
+                        <p>Earn recognized certificates</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h4>Community</h4>
+                        <p>Learn with peers worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Students Say</h2>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item text-center px-4">
+                    <img src="https://via.placeholder.com/100" alt="Student" class="rounded-circle mb-3">
+                    <p class="mb-3">"The courses here transformed my career. I went from knowing nothing to landing a job as a senior developer."</p>
+                    <h5>John Doe</h5>
+                    <p class="text-muted">Web Developer at Google</p>
+                </div>
+                <div class="testimonial-item text-center px-4">
+                    <img src="https://via.placeholder.com/100" alt="Student" class="rounded-circle mb-3">
+                    <p class="mb-3">"The project-based learning approach helped me understand complex concepts easily."</p>
+                    <h5>Jane Smith</h5>
+                    <p class="text-muted">AI Engineer at Microsoft</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>TechLearn Pro</h5>
+                    <p>Empowering developers worldwide with quality education.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 TechLearn Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
